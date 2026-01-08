@@ -1,18 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portfolio — Maria</title>
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<h2>Portfolio</h2>
+  <meta charset="UTF-8">
+  <title>Portfolio | MARIA 마리아</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 
-<div class="gallery">
-  <img src="assets/img/portfolio1.jpg">
-  <img src="assets/img/portfolio2.jpg">
-  <img src="assets/img/portfolio3.jpg">
-  <!-- add more -->
-</div>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f0f14;
+      color: #f5f5f7;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.25rem;
+      letter-spacing: 0.05em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #f5f5f7;
+      text-decoration: none;
+      opacity: 0.7;
+      transition: opacity 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      padding: 60px 40px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="gallery">
+    <img src="assets/img/portfolio1.jpg" alt="Maria portfolio image 1">
+    <img src="assets/img/portfolio2.jpg" alt="Maria portfolio image 2">
+    <img src="assets/img/portfolio3.jpg" alt="Maria portfolio image 3">
+    <!-- Add more as needed -->
+  </section>
 
 </body>
 </html>
