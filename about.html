@@ -1,17 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About — 마리아</title>
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<h2>About Me</h2>
-<img src="assets/img/headshot.jpg" alt="Maria Portrait">
-<p>Hi, I’m MARIA, a model based in Seoul! I specialise in commercial, lifestyle, and beauty. <br>
-📍160cm  •  Bust 85 / Waist 70 / Hips 94</p>
+  <meta charset="UTF-8" />
+  <title>About | MARIA 마리아</title>
 
-<h3>안녕하세요, 모델 마리아입니다.</h3>
-<p>서울을 기반으로 광고, 라이프스타일, 뷰티 촬영 활동을 하고 있습니다.</p>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f0f14;
+      color: #f5f5f7;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.25rem;
+      letter-spacing: 0.05em;
+    }
+
+    header p {
+      opacity: 0.8;
+      margin-bottom: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #f5f5f7;
+      text-decoration: none;
+      opacity: 0.7;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    .about {
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .about img {
+      width: 240px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      margin-bottom: 24px;
+    }
+
+    .about p {
+      line-height: 1.7;
+      opacity: 0.9;
+      margin-bottom: 16px;
+    }
+
+    .stats {
+      margin-top: 24px;
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MARIA 마리아</h1>
+    <p>About</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <img src="assets/img/headshot.jpg" alt="Maria portrait">
+
+    <p>
+      Hi, I’m Maria, a model based in Seoul with a focus on commercial, lifestyle, beauty, and fashion.
+      I’m currently building my portfolio and open to agency representation and collaborations.
+    </p>
+
+    <p>
+      안녕하세요, 모델 마리아입니다. 서울을 기반으로 광고, 라이프스타일, 뷰티, 패션 촬영을 하고 있으며,
+      현재 에이전시 소속을 목표로 포트폴리오를 준비하고 있습니다.
+    </p>
+
+    <div class="stats">
+      Height 160cm · Bust 85 · Waist 70 · Hips 94 · Shoes 235mm
+    </div>
+  </section>
 
 </body>
 </html>
