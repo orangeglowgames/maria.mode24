@@ -33,6 +33,30 @@
   <img id="lightbox-img" src="">
   <span class="nav next" onclick="changeImage(1)">❯</span>
 </div>
+  <script>
+  const images = [
+    "assets/img/portfolio/portfolio1.jpg",
+    "assets/img/portfolio/portfolio2.jpg",
+    "assets/img/portfolio/portfolio3.jpg"
+    ];
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    document.getElementById("lightbox-img").src = images[currentIndex];
+    document.getElementById("lightbox").style.display = "flex";
+    }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+    }
+
+  function changeImage(direction) {
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+    document.getElementById("lightbox-img").src = images[currentIndex];
+    }
+  </script>
 
 </body>
 </html>
