@@ -107,19 +107,20 @@ body {
 }
 
 .contact a {
-  color: #ff9fbf;
+  color: #ff8fb8;
   text-decoration: underline;
   opacity: 0.95;
   transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .contact a:hover {
+  color: #ffb3d1;
   opacity: 1;
 }
 
 .contact a:visited,
 .contact a:active {
-  color: #ff6f9f;
+  color: #ff8fb8;
 }
 
 /* ===== Portfolio ===== */
